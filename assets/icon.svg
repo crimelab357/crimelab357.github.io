@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" role="img" aria-label="CrimeStore">
+  <defs>
+    <radialGradient id="bg" cx="54" cy="48" r="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3A0A12"/>
+      <stop offset="0.55" stop-color="#140A0D"/>
+      <stop offset="1" stop-color="#07080A"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="54" cy="54" r="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#CE1126" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#CE1126" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pin" x1="20" y1="20" x2="88" y2="88" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F9FAFB"/>
+      <stop offset="1" stop-color="#A1A7B0"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="30" x2="0" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="body"><rect x="30" y="30" width="48" height="48" rx="8"/></clipPath>
+  </defs>
+  <rect width="108" height="108" fill="url(#bg)"/>
+  <path d="M-10,8 L100,118 L118,100 L8,-10 Z" fill="#fff" fill-opacity="0.05"/>
+  <path d="M-6,4 L104,114 L114,104 L4,-6 Z" fill="#000" fill-opacity="0.25"/>
+  <g fill="none" stroke="#fff" stroke-opacity="0.15" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M45,25 L45,16 L37,8 M54,25 L54,10 M63,25 L63,17 L71,9 M45,83 L45,94 M54,83 L54,98 M63,83 L63,92 L71,100 M25,45 L14,45 L8,39 M25,54 L10,54 M25,63 L16,63 L9,70 M83,45 L94,45 L100,39 M83,54 L98,54 M83,63 L92,63 L99,70"/>
+  </g>
+  <g transform="translate(54 54) scale(0.86) translate(-54 -54)">
+    <circle cx="54" cy="54" r="40" fill="url(#glow)"/>
+    <g stroke="url(#pin)" stroke-width="4.2" stroke-linecap="round">
+      <path d="M39,32 L39,23 M49,32 L49,23 M59,32 L59,23 M69,32 L69,23 M39,76 L39,85 M49,76 L49,85 M59,76 L59,85 M69,76 L69,85 M32,39 L23,39 M32,49 L23,49 M32,59 L23,59 M32,69 L23,69 M76,39 L85,39 M76,49 L85,49 M76,59 L85,59 M76,69 L85,69"/>
+    </g>
+    <g clip-path="url(#body)">
+      <rect x="28" y="28" width="52" height="52" fill="#CE1126"/>
+      <path d="M22,35 L88,101 L88,75 L22,9 Z" fill="#fff"/>
+      <path d="M22,30.5 L88,96.5 L88,79.5 L22,13.5 Z" fill="#0A0A0A"/>
+      <rect x="28" y="28" width="52" height="28" fill="url(#gloss)"/>
+    </g>
+    <rect x="30" y="30" width="48" height="48" rx="8" fill="none" stroke="#fff" stroke-opacity="0.95" stroke-width="2"/>
+    <rect x="43" y="43" width="22" height="22" rx="3" fill="none" stroke="#fff" stroke-opacity="0.85" stroke-width="1.6"/>
+    <circle cx="47" cy="47" r="1.6" fill="#fff" fill-opacity="0.9"/>
+  </g>
+</svg>
