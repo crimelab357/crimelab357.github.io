@@ -13,6 +13,13 @@
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/manrope.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .verify{margin-top:1.25rem}
+    .verify summary{cursor:pointer;font-size:.9rem;opacity:.7;padding:.5rem 0;list-style-position:inside}
+    .verify summary:hover{opacity:1}
+    .verify-note{font-size:.85rem;opacity:.7;margin:.25rem 0 .75rem}
+    .verify .specs{margin-top:0}
+  </style>
 </head>
 <body>
   <header class="bar">
@@ -68,8 +75,14 @@
         <div><dt>Version</dt><dd data-version>1.0.0</dd></div>
         <div><dt>Size</dt><dd data-size>18.2 MB</dd></div>
         <div><dt>Requires</dt><dd>Android 8.0 or later</dd></div>
-        <div><dt>Package</dt><dd class="mono">com.crimelab357.crimestore357</dd></div>
         <div><dt>Publisher</dt><dd>CRIMELAB357</dd></div>
+      </dl>
+
+      <details class="verify reveal">
+        <summary>Advanced: verify your download</summary>
+        <p class="verify-note">Optional. Compare this fingerprint with your downloaded file to confirm it is unchanged. Most people can skip this.</p>
+        <dl class="specs">
+          <div><dt>Package</dt><dd class="mono">com.crimelab357.crimestore357</dd></div>
         <div class="hash">
           <dt>SHA-256</dt>
           <dd>
@@ -77,7 +90,8 @@
             <button class="copy" type="button" data-copy="#sha" aria-label="Copy SHA-256 checksum">Copy</button>
           </dd>
         </div>
-      </dl>
+        </dl>
+      </details>
     </section>
   </main>
 
