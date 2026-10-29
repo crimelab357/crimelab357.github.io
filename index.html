@@ -14,11 +14,10 @@
   <link rel="preload" href="assets/fonts/manrope.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <style>
-    .verify{margin-top:1.25rem}
-    .verify summary{cursor:pointer;font-size:.9rem;opacity:.7;padding:.5rem 0;list-style-position:inside}
-    .verify summary:hover{opacity:1}
-    .verify-note{font-size:.85rem;opacity:.7;margin:.25rem 0 .75rem}
-    .verify .specs{margin-top:0}
+    .flag{display:inline-flex;vertical-align:middle;width:22px;height:13px;margin-left:.35rem;filter:drop-shadow(0 1px 1px rgba(0,0,0,.25))}
+    .flag i{display:block;width:2px;height:13px;background:url(assets/flag-tt.svg) no-repeat;background-size:22px 13px;background-position:calc(var(--i) * -2px) 0;animation:flag-wave 1.8s ease-in-out infinite;animation-delay:calc(var(--i) * -0.16s)}
+    @keyframes flag-wave{0%,100%{transform:translateY(-1px)}50%{transform:translateY(1px)}}
+    @media (prefers-reduced-motion:reduce){.flag i{animation:none}}
   </style>
 </head>
 <body>
@@ -77,27 +76,12 @@
         <div><dt>Requires</dt><dd>Android 8.0 or later</dd></div>
         <div><dt>Publisher</dt><dd>CRIMELAB357</dd></div>
       </dl>
-
-      <details class="verify reveal">
-        <summary>Advanced: verify your download</summary>
-        <p class="verify-note">Optional. Compare this fingerprint with your downloaded file to confirm it is unchanged. Most people can skip this.</p>
-        <dl class="specs">
-          <div><dt>Package</dt><dd class="mono">com.crimelab357.crimestore357</dd></div>
-        <div class="hash">
-          <dt>SHA-256</dt>
-          <dd>
-            <code id="sha">ee52baecd59bd96dc7961e6f729ec66957baf2b5c3075297385771c400c2f937</code>
-            <button class="copy" type="button" data-copy="#sha" aria-label="Copy SHA-256 checksum">Copy</button>
-          </dd>
-        </div>
-        </dl>
-      </details>
     </section>
   </main>
 
   <footer class="foot">
     <p class="sig">CRIMELAB357 <span class="pipe" aria-hidden="true"></span> TRINIDAD AND TOBAGO
-      <img src="assets/flag-tt.svg" alt="" width="22" height="13"></p>
+      <span class="flag" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i><i style="--i:9"></i><i style="--i:10"></i></span></p>
     <p class="copy-line">© <span id="year">2026</span> CRIMELAB357</p>
   </footer>
 
